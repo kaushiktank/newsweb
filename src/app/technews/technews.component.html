@@ -1,0 +1,20 @@
+<div class="container-fluid mt-5">
+  <h4>Tech News</h4>
+  <div class="row">
+    <div *ngFor="let d of technewsDisplay" class="col-lg-3 mt-3 mb-3">
+      <div class="card" style="width: 18rem">
+        <img src="{{ d.urlToImage }}" class="card-img-top" />
+        <div class="card-body">
+          <h5 class="card-title">{{ d.title }}</h5>
+          <p class="card-text">{{ d.description }}</p>
+          <a
+            href="{{ d.url }}"
+            target="_blank"
+            class="btn btn-secondary stretched-link"
+            >Read more</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
